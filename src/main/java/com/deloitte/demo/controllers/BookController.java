@@ -1,5 +1,6 @@
 package com.deloitte.demo.controllers;
 
+import com.deloitte.demo.services.BookService;
 import com.deloitte.demo.services.BookServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -22,7 +23,7 @@ import com.deloitte.demo.entities.Book;
 public class BookController {
 
     @Autowired
-    private BookServiceImpl bookService;
+    private BookService bookService;
 
     /**
      * findAll
@@ -61,7 +62,7 @@ public class BookController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Book create(@RequestBody Book book) {
-        return bookService.createBook(book);
+            return bookService.createBook(book);
     }
 
     /**
