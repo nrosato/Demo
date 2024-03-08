@@ -10,6 +10,11 @@ public class SimpleController {
     @Value("${spring.application.name}")
     String appName;
 
+    /**
+     * homePage
+     * @param model UI model
+     * @return home representing html template
+     */
     @GetMapping("/")
     public String homePage(Model model) {
         model.addAttribute("appName", appName);

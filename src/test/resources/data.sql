@@ -1,0 +1,5 @@
+insert into book(id, title, author) values(1, 'BOOK 1', 'DELOITTE')
+insert into book(id, title, author) values(2, 'BOOK 2', 'DELOITTE')
+insert into book(id, title, author) values(3, 'BOOK 3', 'DELOITTE')
+insert into book(id, title, author) values(4, 'BOOK 4', 'DELOITTE')
+insert into book(id, title, author) values(5, 'BOOK 5', 'DELOITTE')
